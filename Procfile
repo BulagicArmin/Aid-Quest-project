@@ -1,1 +1,1 @@
-web: gunicorn AQ.wsgi
+web: gunicorn blogdemo.wsgi

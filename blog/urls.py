@@ -5,7 +5,7 @@ from django.contrib.admin.views.decorators import staff_member_required
 from . import views
 
 urlpatterns = [
-    path('', PostListView.as_view(), name='blog-home'),
+    path('home/', PostListView.as_view(), name='blog-home'),
     path('user/<int:pk>/', UserPostListView.as_view(), name='user-posts'),
     path('post/<int:pk>/', DetailListView.as_view(), name='post-detail'),
     path('post/new/', staff_member_required(PostCreateView.as_view()), name='post-create'),
@@ -20,4 +20,6 @@ urlpatterns = [
     path('zahtjev/<int:pk>/update/', ZahtjevUpdateView.as_view(), name='zahtjev-update'),
 
     path('about/', views.about, name='blog-about'),
+    path('', views.mainhome, name='main-home'),
+
 ]

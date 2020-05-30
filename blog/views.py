@@ -65,6 +65,9 @@ class ZahtjevListView(UserPassesTestMixin,ListView):
 def about(request):
     return render(request, 'blog/about.html', {'title': 'about'})
 
+def mainhome(request):
+    return render(request, 'blog/main_home.html', {'title': 'main'})
+
 
 def charge(request,pk):
     amount = 5

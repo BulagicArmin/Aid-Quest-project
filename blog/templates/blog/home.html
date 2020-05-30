@@ -14,6 +14,9 @@
         </div>
         <h2><a class="article-title" href="{% url 'post-detail' post.id%}">{{ post.title }}</a></h2>
         <p class="article-content">{{ post.content }}</p>
+          <a href="{% url 'post-detail' post.id %}">
+            <button class="btn btn-outline-danger" >Doniraj</button>
+          </a>
       </div>
     </article>
 {% endfor %}

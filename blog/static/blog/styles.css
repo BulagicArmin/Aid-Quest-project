@@ -1,0 +1,91 @@
+body {
+    color: #333333;
+    margin-top: 5rem;
+    background-image: url("bgimg.jpg");
+    background-size: 100%;
+    background-color: #cccccc;
+    background-repeat: repeat-y;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #444444;
+}
+
+.site-header {
+    opacity: 80%;
+}
+
+#naslov {
+    margin-top: 15rem;
+    color: white;
+}
+
+#naslovP {
+    color: white;
+}
+
+#naslovP .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+#reg {
+    background: rgb(16, 16, 16);
+    background: radial-gradient(circle, rgba(16, 16, 16, 0.8076272745426296) 50%, rgba(255, 255, 255, 0) 75%);
+}
+
+#RegK {
+    margin-top: 2rem;
+}
+
+#RegO {
+    margin-top: 2rem;
+}
+
+ul {
+    margin: 0;
+}
+
+.bg-steel {
+    background-color: #021CB1;
+}
+
+.site-header .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+    color: #CCA296
+}
+
+.site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+}
+
+#brand {
+    font-family: 'Satisfy', cursive;
+    padding-top: 0.35rem;
+    color: white;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+

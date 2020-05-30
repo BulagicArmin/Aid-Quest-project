@@ -32,7 +32,7 @@ phonenumbers==8.12.3
 Pillow==7.1.2
 ply==3.11
 prompt-toolkit==2.0.10
-psycopg2 @ file:///C:/psycopg2-2.8.5-cp38-cp38-win32.whl
+psycopg2 @ file:///C:/psycopg2-2.8.5-cp38-cp38-win_amd64.whl
 Pygments==2.6.1
 pyparsing==2.4.7
 python-dateutil==2.8.1

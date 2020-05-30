@@ -11,17 +11,18 @@
             </div>
             <h2><a class="article-title" href="{% url 'post-detail' post.id%}">{{ post.title }}</a></h2>
             <p class="article-content">{{ post.content }}</p>
-            <div class="card" style="width: 30rem;">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item list-group-item-info">Uplatni račun: {{ post.uplatni_racun }}</li>
-                    <li class="list-group-item list-group-item-info">Prikupljena sredstva: {{ post.prikupljeno }}€</li>
-                </ul>
 
-            </div>
 
 
           </div>
         </article>
+        <div class="card mb-4" style="max-width: 100%;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-info">Uplatni račun: {{ post.uplatni_racun }}</li>
+                <li class="list-group-item list-group-item-info">Prikupljena sredstva: {{ post.prikupljeno }}€</li>
+            </ul>
+
+        </div>
     {% endfor %}
     {% if is_paginated %}
         {% if page_obj.has_previous %}

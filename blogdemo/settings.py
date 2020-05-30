@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_heroku
+
 """
 from botocore.client import Config
 import boto3
@@ -161,6 +163,6 @@ AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-
+django_heroku.settings(locals())
 #STRIPE_SECRET_KEY = 'sk_test_sPrD7RKSpmQ7QSjFxwYU9r3x007aHGgUvp'
 #STRIPE_PUBLISHABLE_KEY = 'pk_test_SsNAzAmEVDxiDIfpvlel45uV00CvyEbOFr'
